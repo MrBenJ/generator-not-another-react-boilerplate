@@ -1,0 +1,17 @@
+{
+  "name": "generator-not-another-react-boilerplate",
+  "version": "0.1.0",
+  "description": "Fill me in",
+  "main": "index.js",
+  "author": "Ben Junya",
+  "license": "MIT",
+  "files": [
+    "app"
+  ],
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "yeoman-generator": "^1.1.1",
+    "yosay": "^2.0.0"
+  },
+  "devDependencies": {}
+}
