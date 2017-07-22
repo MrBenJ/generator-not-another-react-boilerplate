@@ -9,7 +9,7 @@ export const globalStyle = css`
 
     a, a:visited {
         font-size: 16px;
-        color: black;
+        color: ${colors.primary_dark};
         text-decoration: none;
     }
 

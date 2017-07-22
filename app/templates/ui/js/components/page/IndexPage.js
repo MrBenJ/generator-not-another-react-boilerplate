@@ -26,6 +26,7 @@ class IndexPage extends Component {
                         <li>React-Router</li>
                         <li>Redux and React-Redux</li>
                         <li>Redux-Saga</li>
+                        <li>Express.js</li>
                     </ul>
                 </div>
                 <Title>Principles</Title>
@@ -37,12 +38,18 @@ class IndexPage extends Component {
                             <li>Create a fun and easy system and architecture to develop on</li>
                             <li>Build modular and testable</li>
                             <li>Front-End first</li>
+                            <li>Minimal Backend setup</li>
                             <li>Maximize performance</li>
                         </ul>
                     </Text>
                 <Text>Organized in a styled-components-ish manner</Text>
                 <Text>Hot loading enabled for development, disabled for production (for obvious reasons)</Text>
-
+                <Text>
+                    The backend is set up in a highly minimalistic fashion. As many front end developers
+                    enjoy working in the React ecosystem, the Single Page App architecture has been in a
+                    loose sense, {`"standardized"`}. If I was starting a project from scratch, this is the exact
+                     front end setup I would personally use.
+                </Text>
                 <Title>Where to start?</Title>
                 <Text>
                     For starters, you can check out the <Link to='/docs'>Documentation</Link> to get you started :D
