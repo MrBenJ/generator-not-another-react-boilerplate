@@ -7,7 +7,9 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "babel-polyfill": "^6.23.0",
+    "body-parser": "^1.17.2",
     "emotion": "^6.0.3",
     "express": "^4.15.3",
     "normalize.css": "^7.0.0",

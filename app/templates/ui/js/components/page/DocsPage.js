@@ -25,14 +25,14 @@ class DocsPage extends Component {
                     -- /js                      -- folder containing components, reducers, stores, etc<br/>
                     -- -- /actions              -- Redux Actions<br/>
                     -- -- /components           -- all React Components<br/>
-                    -- -- -- common             -- Commonly used presentational components <br/>
-                    -- -- -- page               -- Page level components<br/>
+                    -- -- -- /common            -- Commonly used presentational components <br/>
+                    -- -- -- /page              -- Page level components<br/>
                     -- -- /reducers             -- Redux Reducers <br/>
                     -- -- /store                -- Redux Store <br/>
                     -- /style                   -- Folder where all the styles live <br/>
-                    -- -- colorPallete          -- Exported colors<br/>
-                    -- -- typography            -- Fonts<br/>
-                    -- -- commonStyles          -- Styles for all the js/components/common components<br/>
+                    -- -- colorPallete.js       -- Exported colors<br/>
+                    -- -- typography.js         -- Fonts<br/>
+                    -- -- commonStyles.js       -- Styles for all the js/components/common components<br/>
                     -- entry.js                 -- SPA entry point<br/>
                 </Code>
                 <Title>npm Scripts</Title>

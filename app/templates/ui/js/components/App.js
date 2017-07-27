@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 // import { css } from 'emotion';
 
-import Header from 'js/components/common/Header';
-import IndexPage from 'js/components/page/IndexPage';
-import DocsPage from 'js/components/page/DocsPage';
+import Header from 'components/common/Header';
+import Footer from 'components/common/Footer';
+import IndexPage from 'components/page/IndexPage';
+import DocsPage from 'components/page/DocsPage';
+import ReduxPage from 'components/page/ReduxPage';
 
 import { globalStyle } from 'style/commonStyles';
 class App extends Component {
@@ -20,8 +22,9 @@ class App extends Component {
                 <Switch>
                     <Route exact path="/" component={IndexPage} />
                     <Route path="/docs" component={DocsPage} />
-
+                    <Route path="/redux" component={ReduxPage} />
                 </Switch>
+                <Footer />
             </div>
         );
     }

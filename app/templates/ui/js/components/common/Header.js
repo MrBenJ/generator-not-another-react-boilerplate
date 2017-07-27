@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { css } from 'emotion';
 
-import { Title } from 'js/components/common';
+import { Title } from 'components/common';
 
 
 // import PropTypes from 'prop-types';
@@ -34,6 +34,7 @@ class Header extends Component {
                 <Title css={`text-align:center;`}>Not Another React Boilerplate...</Title>
                 <Link to="/">Homepage</Link>
                 <Link to="/docs">Documentation</Link>
+                <Link to="/redux">Redux Demo</Link>
             </div>
         );
     }

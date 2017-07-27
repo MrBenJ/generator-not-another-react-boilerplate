@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
 import  { Link } from 'react-router-dom';
+
 import { Text, Title } from 'js/components/common';
 
 
@@ -33,15 +34,15 @@ class IndexPage extends Component {
                     <Text>
                         Setting up a single page React application sucks!
                         The React Ecosystem is just asking for newcomers to get #JavascriptFatigue.
-                        <ul>
-                            <li>Avoid #JavascriptFatigue at all costs</li>
-                            <li>Create a fun and easy system and architecture to develop on</li>
-                            <li>Build modular and testable</li>
-                            <li>Front-End first</li>
-                            <li>Minimal Backend setup</li>
-                            <li>Maximize performance</li>
-                        </ul>
                     </Text>
+                    <ul>
+                        <li>Avoid #JavascriptFatigue at all costs</li>
+                        <li>Create a fun and easy system and architecture to develop on</li>
+                        <li>Build modular and testable</li>
+                        <li>Front-End first</li>
+                        <li>Minimal Backend setup</li>
+                        <li>Maximize performance</li>
+                    </ul>
                 <Text>Organized in a styled-components-ish manner</Text>
                 <Text>Hot loading enabled for development, disabled for production (for obvious reasons)</Text>
                 <Text>
@@ -57,7 +58,7 @@ class IndexPage extends Component {
                 <Title>Hey! I want to help out!</Title>
                 <Text>Great! I love contributions! Make a fork, then make a pull request!</Text>
                 <br/>
-                <Text>Created by <a target="_blank" rel="noreferrer noopener" href="https://www.github.com/mrbenj">@MrBenJ</a></Text>
+
             </div>
         );
     }
