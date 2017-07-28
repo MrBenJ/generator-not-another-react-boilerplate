@@ -5,6 +5,14 @@
   "main": "index.js",
   "author": "Ben Junya",
   "license": "MIT",
+  "keywords": [
+    "yeoman-generator",
+    "react",
+    "redux",
+    "redux-saga",
+    "jest",
+    "react-boilerplate"
+  ],
   "files": [
     "app"
   ],
