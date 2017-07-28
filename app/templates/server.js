@@ -4,7 +4,7 @@
 // Dotenv - Load .env file depending on development
 // or production
 //
-const ENV = process.env.NODE_ENV;
+const ENV = process.env.NODE_ENV || 'development';
 require('dotenv').load({
     path: ENV === 'development' ?
         '.env.dev' :
@@ -75,7 +75,7 @@ app.get('*', (req, res) => {
 });
 
 // DEFAULT PORT is 3000 unless specified by dotenv
-const PORT = JSON.stringify(process.env.PORT) ?
+const PORT = Number(JSON.stringify(process.env.PORT)) ?
     Number(JSON.stringify(process.env.PORT)) : 3000;
 app.listen(PORT, () => {
     console.log(`Server running in ${ENV.toUpperCase()} mode`);

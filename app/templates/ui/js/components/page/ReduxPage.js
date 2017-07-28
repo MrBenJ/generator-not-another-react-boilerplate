@@ -16,8 +16,8 @@ class ReduxPage extends Component {
             <div>
                 <Title>Demonstration of Redux powered components</Title>
                 <Text>
-                    A short sample of some (extremely) basic Redux components. You can find the unit tests for these components in
-                    <i> __tests__/components/</i>
+                    A short sample of some (extremely) basic Redux components. Unit tests for all components are in the same folder as the component<br/>
+                    Note that there are also numerous tests for reducers, sagas, and more!
                 </Text>
                 <Title>Counter</Title>
                 <Text>Obligatory (kinda stupid) Counter increment/decrement component</Text>

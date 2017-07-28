@@ -28,8 +28,47 @@ module.exports = class extends Generator {
 
             this.log('💥 BAM! Let\'s do this! 👌');
             this.log(`Installing ${name} in directory: ${this.destinationRoot()}`);
+            this.fs.copyTpl(
+                this.templatePath('.'),
+                this.destinationPath('.'),
+                { name }
+            );
 
+            this._dotfiles(name);
+            this.yarnInstall(undefined, undefined, () => {
+                this.log('All done! Run "yarn start" and head to localhost:3000 to see documentation!');
+                this.log('If you liked this generator, Give it a Star :D - @MrBenJ would love you forever ;)');
+            });
         });
+
     }
+    _dotfiles(name) {
+            console.log('Copying dotfiles...');
+            this.fs.copyTpl(
+                this.templatePath('.babelrc'),
+                this.destinationPath('.babelrc'),
+                { name }
+            );
+            this.fs.copyTpl(
+                this.templatePath('.env.dev'),
+                this.destinationPath('.env.dev'),
+                { name }
+            )
+            this.fs.copyTpl(
+                this.templatePath('.env.prod'),
+                this.destinationPath('.env.prod'),
+                { name }
+            )
+            this.fs.copyTpl(
+                this.templatePath('.eslintrc.json'),
+                this.destinationPath('.eslintrc.json'),
+                { name }
+            );
+            this.fs.copyTpl(
+                this.templatePath('.gitignore'),
+                this.destinationPath('.gitignore'),
+                { name }
+            );
+        }
 
 }

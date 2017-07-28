@@ -28,6 +28,7 @@ class DocsPage extends Component {
                     -- -- -- /common            -- Commonly used presentational components <br/>
                     -- -- -- /page              -- Page level components<br/>
                     -- -- /reducers             -- Redux Reducers <br/>
+                    -- -- /sagas                -- Async Sagas used with redux-saga<br/>
                     -- -- /store                -- Redux Store <br/>
                     -- /style                   -- Folder where all the styles live <br/>
                     -- -- colorPallete.js       -- Exported colors<br/>
@@ -39,8 +40,11 @@ class DocsPage extends Component {
                 <Text>You can run any of these commands on your CLI to do the following</Text>
                 <Code>
                     yarn start                  -- Start the webserver in development mode (Yay Hotloading!)<br/>
+                    yarn start:prod             -- Start the webserver in production mode. Use "yarn build" beforehand to build minified production assets first!<br/>
                     yarn deploy                 -- Deploys your application in production mode (NODE_ENV=production)<br/>
                     yarn test                   -- Runs the testing suite<br/>
+                    yarn test:watch             -- Runs the testing suite in watch-mode. Runs tests every time you save a js file<br/>
+                    yarn build                  -- Builds the production assets - run "yarn start:prod" afterwards to run the production server<br/>
                 </Code>
 
                 <Title>Import Path Aliases</Title>
