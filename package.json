@@ -1,7 +1,7 @@
 {
   "name": "generator-not-another-react-boilerplate",
   "version": "0.1.6",
-  "description": "Another React JS boilerplate!?",
+  "description": "Developer satisfaction centric complete single page react application with HMR, React-Router, Redux, Redux-Saga, Jest, and minimal backend with Express. ",
   "main": "index.js",
   "author": "Ben Junya",
   "license": "MIT",
