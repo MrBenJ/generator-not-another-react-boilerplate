@@ -1,15 +1,6 @@
 import * as types from '../actions/actionTypes';
 import initialState from './initialState';
 
-
-
-// if(module.hot) {
-//     module.hot.accept('./reducers/', () => {
-//         const nextRootReducer = require('./index').default;
-//         store.replaceReducer(nextRootReducer);
-//     });
-// }
-
 export default function counterReducer(state = initialState.counter , action) {
     state = Object.assign({}, state);
 
