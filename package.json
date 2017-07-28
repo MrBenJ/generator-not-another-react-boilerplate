@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "Ben Junya",
   "license": "MIT",
+  "repository": "https://github.com/MrBenJ/generator-not-another-react-boilerplate",
   "keywords": [
     "yeoman-generator",
     "react",
