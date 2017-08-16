@@ -5,5 +5,9 @@ export default {
     auth: {
         user: false,
         errors: []
+    },
+    heroData: {
+        dataValue: null,
+        errors: []
     }
 };

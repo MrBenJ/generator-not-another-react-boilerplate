@@ -1,0 +1,22 @@
+[
+  {
+    "firstName": "Clark",
+    "lastName": "Kent",
+    "alias": "Superman"
+  },
+  {
+    "firstName": "John",
+    "lastName": "Stewart",
+    "alias": "Green Lantern"
+  },
+  {
+    "firstName": "Bruce",
+    "lastName": "Wayne",
+    "alias": "Batman"
+  },
+  {
+    "firstName": "Matthew",
+    "lastName": "Murdock",
+    "alias": "Daredevil"
+  }
+]

@@ -11,9 +11,6 @@ class Counter extends Component {
     constructor(props) {
         super(props);
         this.displayName = 'Counter';
-        this.state = {
-            value: 0
-        };
     }
 
     render() {
@@ -69,4 +66,3 @@ function mapDispatchToProps(dispatch) {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Counter);
-
