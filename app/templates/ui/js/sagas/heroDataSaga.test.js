@@ -30,7 +30,7 @@ describe('fetching Data from the server', () => {
 
     describe('Watch Sagas', () => {
 
-        let gen = fetchAsyncHeroData;
+        const gen = fetchAsyncHeroData;
 
         it('watches for the FETCH_ASYNC_HERODATA saga', () => {
             let saga = watchForAsyncHeroData();

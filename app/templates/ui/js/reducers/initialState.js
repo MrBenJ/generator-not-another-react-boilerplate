@@ -7,7 +7,7 @@ export default {
         errors: []
     },
     heroData: {
-        dataValue: null,
+        dataValue: [],
         errors: []
     }
 };

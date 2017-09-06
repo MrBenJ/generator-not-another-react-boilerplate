@@ -62,16 +62,17 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
+FetchDataDemo.defaultProps = {
+    dataValue: []
+}
 
-//Need to check if propsTypes are required or not.
 FetchDataDemo.propTypes = {
-    dataActions: PropTypes.object,
-    dataOnload: PropTypes.func,
-    dataValue: PropTypes.array,
+    dataActions: PropTypes.object.isRequired,
+    dataValue: PropTypes.array.isRequired,
     isLoggedIn: PropTypes.oneOfType([
         PropTypes.bool,
         PropTypes.string
-    ])
+    ]).isRequired
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(FetchDataDemo);

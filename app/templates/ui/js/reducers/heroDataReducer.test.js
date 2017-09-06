@@ -26,7 +26,7 @@ describe('heroDataReducer tests', () => {
     ];
 
     it('should return data after a successful fetch request', () => {
-        const state = { dataValue: null, errors: [] };
+        const state = { dataValue: [], errors: [] };
         const expected = { dataValue: data, errors: [] };
 
         const actual = heroDataReducer(state, { type: type.FETCH_ASYNC_HERODATA_SUCCESS, data });
@@ -36,17 +36,17 @@ describe('heroDataReducer tests', () => {
     it('should not return data when the fetch request has failed', () => {
         const errors = 'Request failed with status code 404';
         const state = {
-            dataValue: null,
+            dataValue: [],
             errors: []
         };
-        const expected = { dataValue: null, errors: [errors] };
+        const expected = { dataValue: [], errors: [errors] };
 
         const actual = heroDataReducer(state, { type: type.FETCH_ASYNC_HERODATA_FAILURE, errorMessages: errors });
         expect(actual).toEqual(expected);
     });
 
     it('should handle the default case', () => {
-        const expected = { dataValue: null, errors: [] };
+        const expected = { dataValue: [], errors: [] };
 
         const actual = heroDataReducer(undefined, {});
         expect(actual).toEqual(expected);
