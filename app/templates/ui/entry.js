@@ -12,6 +12,7 @@ import App from 'js/components/App';
 
 import configureStore from 'js/store/configureStore';
 import rootApiSaga from 'js/sagas/authSaga';
+import heroDataSaga from 'js/sagas/heroDataSaga';
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -29,3 +30,4 @@ ReactDOM.render(
 );
 
 sagaMiddleware.run(rootApiSaga);
+sagaMiddleware.run(heroDataSaga);

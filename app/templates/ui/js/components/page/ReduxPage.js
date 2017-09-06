@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Title, Text } from 'components/common';
 import Counter from 'components/common/Counter';
 import LoginBox from 'components/common/LoginBox';
+import FetchDataDemo from 'components/common/FetchDataDemo';
 
 class ReduxPage extends Component {
     constructor(props) {
@@ -33,6 +34,7 @@ class ReduxPage extends Component {
                     csrfToken="12345"
                     endpoint="/api/auth"
                 />
+                <FetchDataDemo />
             </div>
         )
     }

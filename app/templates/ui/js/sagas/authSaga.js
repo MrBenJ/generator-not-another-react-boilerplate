@@ -27,6 +27,7 @@ export function* logoutSaga() {
         yield put({type: types.NETWORK_FAILURE });
     }
 }
+
 export function* watchForLogin() {
     yield takeEvery(types.AUTH_LOGIN, loginSaga);
 }
