@@ -14,6 +14,7 @@ import configureStore from 'js/store/configureStore';
 import rootApiSaga from 'js/sagas/authSaga';
 import heroDataSaga from 'js/sagas/heroDataSaga';
 
+import 'normalize.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 const { store, sagaMiddleware } = configureStore();
