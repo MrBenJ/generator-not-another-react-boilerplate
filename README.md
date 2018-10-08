@@ -1,4 +1,7 @@
 # Not Another React Boilerplate!?
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/MrBenJ/generator-not-another-react-boilerplate.svg)](https://greenkeeper.io/)
+
 ![Too many f***in boilerplates!](https://i.imgflip.com/1t743g.jpg)
 
 Big complaints about React I've heard:
